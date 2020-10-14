@@ -13,6 +13,7 @@ public class SubTree {
      * Step 3 : If something found try to match that start node inside T1 using recursion approach
      * Step 4:  If not found start iterating the list to look for any other occurrence of the start node
      * Step 5 : If after complete iteration nothing is found return false else return true;
+     *
      * @param T1
      * @param T2
      * @return
@@ -68,5 +69,41 @@ public class SubTree {
 
         return false;
 
+    }
+
+    /**
+     * Faster Algorithm it evaluates
+     * iteration by iteration to find match
+     * without taking any extra space
+     * @param t1
+     * @param t2
+     * @return
+     */
+    private boolean containsTree(TreeNode t1, TreeNode t2) {
+        if (t2 == null) {
+            return true;
+        }
+        return subTree(t1, t2);
+    }
+
+    private boolean subTree(TreeNode t1, TreeNode t2) {
+        if (t1 == null) {
+            return false;
+        } else if (t1.val == t2.val && matchTree(t1, t2)) {
+            return true;
+        }
+        return subTree(t1.left, t2) || subTree(t1.right, t2);
+    }
+
+    private boolean matchTree(TreeNode t1, TreeNode t2) {
+        if (t1 == null && t2 == null) {
+            return true;
+        } else if (t1 == null || t2 == null) {
+            return false;
+        } else if (t1.val != t2.val) {
+            return false;
+        } else {
+            return matchTree(t1.left, t2.left) && matchTree(t1.right, t2.right);
+        }
     }
 }
