@@ -31,7 +31,7 @@ public class NAryTreePostorderTraversal {
         postOrderTraversal.add(root.val);
     }
 
-    class Node {
+    public static class Node {
         public int val;
         public List<Node> children;
 
