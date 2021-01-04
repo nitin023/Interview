@@ -1,5 +1,11 @@
 package com.cracking.coding.interview.leetcode.topinterview.medium;
 
+/*
+279. Perfect Squares
+https://leetcode.com/problems/perfect-squares/
+Medium
+Dynamic Programming + Mathmetical
+*/
 public class PerfectSquares {
 
     final int MAX = 10000;
