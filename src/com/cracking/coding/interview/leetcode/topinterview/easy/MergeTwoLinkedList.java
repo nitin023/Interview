@@ -3,7 +3,7 @@ package com.cracking.coding.interview.leetcode.topinterview.easy;
 import com.cracking.coding.interview.LinkedList.ListNode;
 
 public class MergeTwoLinkedList {
-    public ListNode mergeTwoListsIteratively(ListNode l1, ListNode l2) {
+    public static ListNode mergeTwoListsIteratively(ListNode l1, ListNode l2) {
 
         if (l1 == null) {
             return l2;
