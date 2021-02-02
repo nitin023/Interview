@@ -2,6 +2,8 @@ package com.cracking.coding.interview.leetcode.topinterview.recursion.easy;
 
 import com.cracking.coding.interview.TreesAndGraphs.TreeNode;
 
+import java.util.ArrayList;
+
 /**
  * Easy
  * https://leetcode.com/problems/range-sum-of-bst/
@@ -10,7 +12,7 @@ public class RangeSumInBST {
     int sum = 0;
 
     public int rangeSumBST(TreeNode root, int low, int high) {
-
+        ArrayList<Integer>arr = new ArrayList<>();
         if (root == null) {
             return 0;
         }
