@@ -3,7 +3,9 @@ package com.cracking.coding.interview.leetcode.topinterview.medium;
 import com.cracking.coding.interview.TreesAndGraphs.TreeNode;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Medium
@@ -18,6 +20,7 @@ import java.util.List;
 public class TreeRightView {
 
     List<Integer> rightSideViewList = new ArrayList<>();
+    Set<Integer> t = new HashSet();
 
     public List<Integer> rightSideView(TreeNode root) {
         if (root == null) {
