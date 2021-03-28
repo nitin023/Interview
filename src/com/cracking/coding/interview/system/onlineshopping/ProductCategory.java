@@ -1,4 +1,4 @@
-package com.cracking.coding.interview.system.booking.airline.onlineshopping;
+package com.cracking.coding.interview.system.onlineshopping;
 
 public class ProductCategory {
     private String name;
