@@ -1,0 +1,17 @@
+It Should be able to list the cities where affiliate cinemas are located
+
+Each cinema Hall can have multiple Audi's and each Audi can run movie show at a time
+
+Each movie will have multiple shows
+
+Customer should be able to search movies by their title,language,genre,release date,city name
+
+Once the customer selects a movie , the service should display the cinemas running that movie and its
+available shows
+
+The customer should be able to select a show at a particular cinema and book their tickets
+
+The service should show the customer the seating arrangement of the cinema hall.
+The customer should be able to select multiple seats according to their preference.
+
+The Customer should be able to distinguish between available and booked once.
